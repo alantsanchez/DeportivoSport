@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,500;1,300&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Kanit', sans-serif;
+}
+.navegacion div{
+    background-color: rgb(10, 10, 148);
+
+}
+    .navegacion img{
+        width: 20%;
+    }
+    .navegacion div ul li a{
+        color: white;
+        display: flex;
+        flex-direction: row;
+        margin: 10px;
+        font-size: 1.5em;
+
+    }
+
+main .header-equipo{
+    background-image: url(./img/roman.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
+}
+main h1{
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    font-size: 4em;
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 30%;
+
+}
+.barcaa{ 
+    height: 70vh;
+    background-image: url(./img/barca.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header button{
+    padding: 10px;
+    margin-top: 330px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(9, 9, 96);
+    font-size: 1.8em;
+    border-radius: 5px;
+    border-width: 10px;
+    border-color: rgb(24, 6, 163);
+    font-style: oblique;
+}
+
+main div img{
+    width: 49%;
+}
+
+/* color para botones */
+.bg-blue{
+    background-color: rgba(6, 6, 92, 0.89);
+    color: white;
+}
+/* estilos de las camisetas */
+.container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .imagen {
+    transition: 0.3s;
+  }
+  
+  .imagen:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+  }
+  
+  /* end estilos camisetas */
