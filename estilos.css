@@ -16,12 +16,23 @@
         color: white;
         display: flex;
         flex-direction: row;
-        margin: 10px;
+        margin-right: 20px;
+        margin-left: 20px;
         font-size: 1.5em;
 
     }
 
-main .header-equipo{
+.fondo{
+    background-image: url(./img/fondo.jpg);
+    background-repeat: repeat;
+}    
+
+.container-fluid{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+    main .header-equipo{
     background-image: url(./img/roman.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
@@ -32,6 +43,7 @@ main h1{
     font-weight: 500;
     font-size: 4em;
     text-align: center;
+    width: 100%;
     padding-top: 1%;
     padding-bottom: 30%;
 
@@ -80,5 +92,45 @@ main div img{
     transform: scale(1.2);
     cursor: pointer;
   }
-  
+
+  .navbar {
+    padding: 0;
+
+  }
   /* end estilos camisetas */
+
+  /* estilos imagenes index */
+  .roman {
+    display: flex;
+  }
+  
+  .cristiano {
+    flex: 1;
+    position: relative;
+  }
+  
+  .cristiano img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .buttons {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    
+  }
+  
+  .buttons button {
+    margin: 25px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(9, 9, 96);
+    font-size: 2em;
+    border-radius: 5px;
+    border-width: 10px;
+    border-color: rgb(24, 6, 163);
+    font-style: oblique;
+    padding: 10px;
+  }
