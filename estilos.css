@@ -29,22 +29,35 @@
     padding-right: 0;
 }
 
-    main .header-equipo{
-    background-image: url(./img/roman.jpg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    
+.messi {
+  padding-left: 0;
+  padding-right: 0;
 }
-main h1{
+
+  header .header-equipo{
+  background-image: url(./img/roman.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 100vh;
+ }
+
+ header .header-selecciones{
+  background-image: url(./img/selecciones.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 100vh;
+ }
+ 
+h1{
     color: rgb(255, 255, 255);
     font-weight: 500;
-    font-size: 4em;
+    font-size: 3.5em;
     text-align: center;
     width: 100%;
-    padding-top: 1%;
+    padding-top: 3%;
     padding-bottom: 30%;
-
 }
+
 .barcaa{ 
     height: 90vh;
     background-image: url(./img/barca.jpg);
@@ -69,6 +82,167 @@ header button{
 main div img{
     width: 49%;
 }
+
+/* footer */
+.footer-edit {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding:20px;
+}
+
+footer {
+  background-color: rgb(10, 10, 148);
+  color: #fff;
+  padding: 20px 0;
+}
+
+.social-links {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.social-links li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.social-links a {
+  color: #fff;
+  font-size: 20px;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto;
+  max-width: 100px;
+}
+
+
+/* end footer */
+
+/* MEDIDAS RESPONSIVE */
+
+@media screen and (min-width: 768px) and (max-width: 1125px) {
+  div .buttons button {
+    padding: 5px;
+    margin: 5px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(9, 9, 96);
+    font-size: 1em;
+    border-radius: 5px;
+    border-width: 8px;
+    border-color: rgb(24, 6, 163);
+    font-style: oblique;
+  }
+
+  h1{
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    font-size: 2.4em;
+    text-align: center;
+    width: 100%;
+    padding-top: 3%;
+    padding-bottom: 30%;
+  }
+
+  header .header-equipo{
+    background-image: url(./img/roman.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 70vh;
+  }
+
+  header .header-selecciones{
+    background-image: url(./img/selecciones.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 70vh;
+  }
+  
+}
+
+
+@media screen and (max-width: 768px) {
+  .barcaa{ 
+    height: 30vh;
+    background-image: url(./img/barca.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+  header button{
+    padding: 3px;
+    margin-top: 100px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(9, 9, 96);
+    font-size: .5em;
+    border-radius: 2px;
+    border-width: 4px;
+    border-color: rgb(24, 6, 163);
+    font-style: oblique;
+  }
+
+  div .buttons button {
+    padding: 3px;
+    margin: 3px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(9, 9, 96);
+    font-size: 7px;
+    border-radius: 2px;
+    border-width: 4px;
+    border-color: rgb(24, 6, 163);
+    font-style: oblique;
+  }
+
+  h1{
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    font-size: 1em;
+    text-align: center;
+    width: 100%;
+    padding-top: 3%;
+    padding-bottom: 30%;
+  }
+
+  header .header-equipo{
+    background-image: url(./img/roman.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 30vh;
+  }
+
+  header .header-selecciones{
+    background-image: url(./img/selecciones.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 35vh;
+  }
+
+  .footer-edit {
+    padding: 0px;
+  }
+
+  .social-links {
+    margin-top: 10px;
+    height: 30px;
+  }
+
+  .social-links a {
+    font-size: 16px;
+  }
+
+  .logo {
+    max-width: 50px; 
+  }
+}
+
+/* END RESPONSIVE */
+
 
 /* color para botones */
 .bg-blue{
@@ -121,10 +295,10 @@ main div img{
   }
   
   .buttons button {
-    margin: 25px;
+    margin: 20px;
     color: rgb(255, 255, 255);
     background-color: rgb(9, 9, 96);
-    font-size: 2em;
+    font-size: 1.5em;
     border-radius: 5px;
     border-width: 10px;
     border-color: rgb(24, 6, 163);
