@@ -166,6 +166,10 @@ footer {
 
 @media screen and (max-width: 768px) {
 
+  nav div a img{
+    
+  }
+
   .barcaa{ 
     height: 30vh;
     background-image: url(./img/barca.jpg);
