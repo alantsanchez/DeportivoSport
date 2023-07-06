@@ -6,6 +6,10 @@
     font-family: 'Kanit', sans-serif;
 }
 
+.bg-gris{
+  background-color: rgb(175, 175, 175 );
+}
+
 .navegacion div{
     background-color: rgb(10, 10, 148);
 
@@ -83,6 +87,66 @@ main div img{
     width: 49%;
 }
 
+/* segundo main */
+.equipo{
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 33% 33% 33%;
+  grid-template-areas:
+  "presentacion equipo1 equipo2"
+  "equipo3 equipo1 equipo2"
+  "equipo3 equipo4 equipo4";
+  gap: 5px;
+}
+
+.equipo .presentacion{
+  grid-area: presentacion;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px 50px;
+
+}
+
+.equipo .equipo1{
+  grid-area: equipo1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 50px;
+  
+}
+
+.equipo .equipo2{
+  grid-area: equipo2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 50px;
+  
+}
+
+.equipo .equipo3{
+  grid-area: equipo3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 50px;
+
+  
+}
+
+.equipo .equipo4{
+  grid-area: equipo4;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 50px 50px;
+  
+}
+
+/* end seg main */
+
 /* footer */
 .footer-edit {
   max-width: 1200px;
@@ -125,6 +189,11 @@ footer {
 /* MEDIDAS RESPONSIVE */
 
 @media screen and (min-width: 768px) and (max-width: 1125px) {
+
+  main section .dts{
+    height: 35vh;
+  }
+
   div .buttons button {
     padding: 5px;
     margin: 5px;
@@ -160,15 +229,11 @@ footer {
     background-size: 100%;
     height: 70vh;
   }
-  
+
 }
 
 
 @media screen and (max-width: 768px) {
-
-  nav div a img{
-    
-  }
 
   .barcaa{ 
     height: 30vh;
@@ -228,6 +293,10 @@ footer {
     height: 35vh;
   }
 
+  .item {
+    flex-basis: 100%;
+  }
+
   .footer-edit {
     padding: 0px;
   }
@@ -244,7 +313,17 @@ footer {
   .logo {
     max-width: 50px; 
   }
+
+  main section .dts{
+    height: 13vh;
+  }
+
+  .texto{
+    font-size: .5em;
+  }
 }
+
+/* end main equipo */
 
 /* END RESPONSIVE */
 
