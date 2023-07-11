@@ -103,8 +103,7 @@ main div img{
   grid-area: presentacion;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding: 50px 50px;
+  justify-content: center;  padding: 50px 50px;
 
 }
 
