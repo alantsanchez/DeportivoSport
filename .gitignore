@@ -2,3 +2,5 @@ node_modules/
 *.ia
 *.map
 *.log
+/notas
+
