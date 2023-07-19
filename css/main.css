@@ -1,3 +1,411 @@
 @import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,500;1,300&display=swap");
+* {
+  font-family: "Kanit", sans-serif;
+  box-sizing: border-box;
+}
 
-/* # sourceMappingURL=main.css.map */
+.bg-gris {
+  background-color: rgb(228, 228, 228);
+}
+
+h1 {
+  color: rgb(228, 228, 228);
+  font-weight: 600;
+  font-size: 3em;
+  text-align: center;
+  width: 100%;
+  padding-top: 3%;
+  padding-bottom: 30%;
+}
+
+.riquelme {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.messi {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* color para botones */
+.bg-blue {
+  background-color: rgb(10, 10, 148);
+  color: rgb(228, 228, 228);
+}
+
+.navegacion div {
+  width: 100%;
+  background-color: rgb(10, 10, 148);
+  display: flex;
+  flex-direction: row;
+  font-size: 1.3em;
+}
+.navegacion div ul {
+  display: flex;
+}
+.navegacion div ul li a {
+  color: rgb(228, 228, 228);
+  margin-right: 30px;
+}
+
+img {
+  width: 15vh;
+}
+@media (min-width: 280px) and (max-width: 720px) {
+  img {
+    width: 50px;
+  }
+}
+
+header {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+@media screen and (min-width: 768px) and (max-width: 1125px) {
+  header {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media screen and (min-width: 280px) and (max-width: 768px) {
+  header {
+    width: 100%;
+    height: 100%;
+  }
+}
+header img {
+  width: 100%;
+  height: auto;
+}
+@media screen and (max-width: 768px) {
+  header button {
+    padding: 3px;
+    margin-top: 100px;
+    color: rgb(228, 228, 228);
+    background-color: rgb(10, 10, 148);
+    font-size: 0.5em;
+    border-radius: 2px;
+    border-width: 5px;
+    border-color: rgb(9, 9, 96);
+    font-style: oblique;
+  }
+}
+
+.explorar {
+  text-decoration: none;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.8em;
+  color: rgb(228, 228, 228);
+  background-color: rgb(10, 10, 148);
+  margin: 20px;
+  padding: 15px;
+  border-radius: 5px;
+  border-width: 20px;
+  border-color: rgb(9, 9, 96);
+  font-style: oblique;
+}
+@media screen and (min-width: 768px) and (max-width: 1125px) {
+  .explorar {
+    font-size: 24px;
+    border-radius: 5px;
+    border-width: 5px;
+    padding: 10px;
+  }
+}
+@media screen and (min-width: 280px) and (max-width: 768px) {
+  .explorar {
+    font-size: 8px;
+    border-radius: 5px;
+    border-width: 5px;
+    padding: 7px;
+  }
+}
+
+/* estilos imagenes index */
+.roman {
+  display: flex;
+}
+
+.cristiano {
+  flex: 1;
+  position: relative;
+}
+.cristiano img {
+  width: 100%;
+  height: 100%;
+}
+
+.buttons {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.buttons button {
+  margin: 20px;
+  padding: 10px;
+  color: rgb(228, 228, 228);
+  background-color: rgb(10, 10, 148);
+  font-size: 1.5em;
+  border-radius: 5px;
+  border-width: 10px;
+  border-color: rgb(9, 9, 96);
+  font-style: oblique;
+}
+@media screen and (min-width: 768px) and (max-width: 1125px) {
+  .buttons button {
+    padding: 5px;
+    margin: 5px;
+    font-size: 1em;
+    border-radius: 5px;
+    border-width: 7px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .buttons button {
+    padding: 3px;
+    margin: 2px;
+    font-size: 7px;
+    border-radius: 2px;
+    border-width: 5px;
+  }
+}
+
+.riquelme img {
+  width: 100%;
+  height: 100%;
+}
+.riquelme h1 {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  font-size: 3em;
+  text-align: center;
+  color: rgb(228, 228, 228);
+}
+@media screen and (min-width: 768px) and (max-width: 1125px) {
+  .riquelme h1 {
+    color: rgb(228, 228, 228);
+    font-weight: 500;
+    font-size: 2em;
+    text-align: center;
+    width: 100%;
+    padding-top: 3%;
+    padding-bottom: 30%;
+  }
+}
+@media screen and (min-width: 280px) and (max-width: 768px) {
+  .riquelme h1 {
+    color: rgb(228, 228, 228);
+    font-weight: 2em;
+    font-size: 0.7em;
+    text-align: center;
+    width: 100%;
+    padding-top: 3%;
+    padding-bottom: 30%;
+  }
+}
+
+/* segundo main */
+.equipo {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 33% 33% 33%;
+  grid-template-areas: "presentacion equipo1 equipo2" "equipo3 equipo1 equipo2" "equipo3 equipo4 equipo4";
+  gap: 5px;
+}
+
+.equipo .presentacion {
+  grid-area: presentacion;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px 50px;
+}
+
+.equipo .equipo1 {
+  grid-area: equipo1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 50px;
+}
+
+.equipo .equipo2 {
+  grid-area: equipo2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 50px;
+}
+
+.equipo .equipo3 {
+  grid-area: equipo3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 50px;
+}
+
+.equipo .equipo4 {
+  grid-area: equipo4;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 50px 50px;
+}
+
+/* end seg main */
+.messi img {
+  width: 100%;
+  height: 100%;
+}
+.messi h1 {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  font-size: 3em;
+  text-align: center;
+  color: rgb(228, 228, 228);
+}
+@media screen and (min-width: 768px) and (max-width: 1125px) {
+  .messi h1 {
+    color: rgb(228, 228, 228);
+    font-weight: 500;
+    font-size: 2em;
+    text-align: center;
+    width: 100%;
+    padding-top: 3%;
+    padding-bottom: 30%;
+  }
+}
+@media screen and (min-width: 280px) and (max-width: 768px) {
+  .messi h1 {
+    color: rgb(228, 228, 228);
+    font-weight: 2em;
+    font-size: 0.7em;
+    text-align: center;
+    width: 100%;
+    padding-top: 3%;
+    padding-bottom: 30%;
+  }
+}
+
+/* estilos de las camisetas */
+.container {
+  position: relative;
+  display: inline-block;
+}
+
+.imagen {
+  transition: 0.3s;
+}
+.imagenhover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.navbar {
+  padding: 0;
+}
+
+/* end estilos camisetas */
+main section p {
+  word-spacing: 5px;
+}
+@media screen and (min-width: 768px) and (max-width: 1125px) {
+  main section p {
+    word-spacing: 0px;
+    height: 100%;
+  }
+}
+@media screen and (min-width: 280px) and (max-width: 768px) {
+  main section p {
+    word-spacing: 0px;
+    height: 100%;
+  }
+}
+main section .dts {
+  width: auto;
+  margin: 50px 20px;
+}
+@media screen and (min-width: 768px) and (max-width: 1125px) {
+  main section .dts {
+    height: 20%;
+  }
+}
+@media screen and (min-width: 280px) and (max-width: 768px) {
+  main section .dts {
+    height: 8%;
+  }
+}
+@media screen and (max-width: 768px) {
+  main section .texto {
+    font-size: 0.7em;
+  }
+}
+
+/* footer */
+.footer-edit {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+@media screen and (max-width: 768px) {
+  .footer-edit {
+    padding: 0px;
+  }
+}
+
+footer {
+  background-color: rgb(10, 10, 148);
+  color: rgb(228, 228, 228);
+  padding: 20px 0;
+}
+
+.social-links {
+  list-style: none;
+  text-align: center;
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .social-links {
+    margin-top: 10px;
+    height: 100%;
+  }
+}
+.social-links li {
+  display: inline-block;
+  margin: 0 6px;
+}
+.social-links li a {
+  color: rgb(228, 228, 228);
+  font-size: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .items {
+    flex-basis: 100%;
+  }
+}
+
+.logo {
+  display: block;
+  margin: 0 auto;
+  max-width: 100px;
+}
+@media screen and (max-width: 768px) {
+  .logo {
+    max-width: 50px;
+  }
+}
+
+/* end footer */
+
+/*# sourceMappingURL=main.css.map */

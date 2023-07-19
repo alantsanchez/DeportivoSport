@@ -1,0 +1,32 @@
+*{
+    font-family: $mainFont;
+    box-sizing: border-box;
+}
+.bg-gris{
+    background-color: $white;
+}
+
+h1{
+    color: $white;
+    font-weight: $textBold;
+    font-size: $textXl;
+    text-align: center;
+    width: 100%;
+    padding-top: 3%;
+    padding-bottom: 30%;
+}
+
+.riquelme {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.messi {
+  padding-left: 0;
+  padding-right: 0;
+}
+/* color para botones */
+.bg-blue{
+    background-color: $mainColor;
+    color: $white;
+}

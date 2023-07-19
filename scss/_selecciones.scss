@@ -1,0 +1,34 @@
+//messi
+.messi{
+    img{
+        width: 100%;
+        height: 100%;
+    }
+    h1{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        font-size: 3em;
+        text-align: center;
+        color: $white;
+        @media screen and (min-width: 768px) and (max-width: 1125px){
+            color: $white;
+            font-weight: 500;
+            font-size: $textLg;
+            text-align: center;
+            width: 100%;
+            padding-top: 3%;
+            padding-bottom: 30%;
+        }
+        @media screen and (min-width:280px) and (max-width:768px){
+            color: $white;
+            font-weight: $textLg;
+            font-size: $textSm;
+            text-align: center;
+            width: 100%;
+            padding-top: 3%;
+            padding-bottom: 30%;   
+        }
+    }
+
+}

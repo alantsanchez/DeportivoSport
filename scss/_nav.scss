@@ -1,9 +1,26 @@
 //anidacion
 .navegacion{
-    background-color: $mainColor;
-    img{
-        width: 20%;
+    div{
+        width: 100%;
+        background-color: $mainColor;
+        display: flex;
+        flex-direction: row;
+        font-size: 1.3em;
+        ul{
+            display: flex;
+            li{
+                a{
+                    color: $white;
+                    margin-right: 30px;
+                }
+            }
+        }
     }
-
-
+}
+img{
+    width: 15vh;
+    @media (min-width:280px) and (max-width:720px){
+        width: 50px;
+        
+    }
 }
