@@ -1,0 +1,81 @@
+//vende tu camiseta
+//encabezado
+
+//grid
+.vende-c{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  grid-template-areas:
+  "encabezado encabezado"
+  "mapa formulario";
+  .encabezado{
+    grid-area: encabezado;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px 20px;
+  }
+  .mapa{
+    grid-area: mapa;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px 30px;
+  }
+  .formulario{
+    grid-area: formulario;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    padding: 50px 30px;
+  }
+}
+
+
+//formulario
+
+  .form-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:  rgb(255, 255, 255);
+    padding: 30px;
+    margin-inline-end: 0px;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px $black;
+  }
+  
+  form{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group{
+    margin-bottom: 15px;
+  }
+  
+  label{
+    font-weight: $textRegular;
+  }
+  
+  input,
+  textarea{
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .enviar{
+    background-color: #4CAF50;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    &hover{
+      background-color: #45a049;
+      cursor: pointer;
+    }
+  }

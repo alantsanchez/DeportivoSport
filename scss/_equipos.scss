@@ -33,54 +33,16 @@
 
 }
 
-/* segundo main */
-.equipo{
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
-    grid-template-rows: 33% 33% 33%;
-    grid-template-areas:
-    "presentacion equipo1 equipo2"
-    "equipo3 equipo1 equipo2"
-    "equipo3 equipo4 equipo4";
-    gap: $borderSm;
+/* estilos de las camisetas */
+.container {
+    position: relative;
+    display: inline-block;
 }
 
-.equipo .presentacion{
-    grid-area: presentacion;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;  padding: 50px 50px;
+.imagen {
+    transition: 0.3s;
+    &hover{
+        transform: scale(1.2);
+        cursor: pointer;
+    }
 }
-  
-.equipo .equipo1{
-    grid-area: equipo1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 50px 50px;
-}
-  
-.equipo .equipo2{
-    grid-area: equipo2;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 50px 50px;
-}
-  
-.equipo .equipo3{
-    grid-area: equipo3;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 50px 50px;
-}
-  
-.equipo .equipo4{
-    grid-area: equipo4;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 50px 50px;
-}
-  /* end seg main */

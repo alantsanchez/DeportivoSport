@@ -34,23 +34,21 @@ h1 {
   color: rgb(228, 228, 228);
 }
 
+.navbar {
+  padding: 0;
+}
+
 .navegacion div {
   width: 100%;
   background-color: rgb(10, 10, 148);
-  display: flex;
-  flex-direction: row;
-  font-size: 1.3em;
-}
-.navegacion div ul {
-  display: flex;
+  font-size: 1.2em;
 }
 .navegacion div ul li a {
   color: rgb(228, 228, 228);
-  margin-right: 30px;
 }
 
 img {
-  width: 15vh;
+  width: 13vh;
 }
 @media (min-width: 280px) and (max-width: 720px) {
   img {
@@ -212,6 +210,90 @@ header img {
   }
 }
 
+/* estilos de las camisetas */
+.container {
+  position: relative;
+  display: inline-block;
+}
+
+.imagen {
+  transition: 0.3s;
+}
+.imagenhover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.messi img {
+  width: 100%;
+  height: 100%;
+}
+.messi h1 {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  font-size: 3em;
+  text-align: center;
+  color: rgb(228, 228, 228);
+}
+@media screen and (min-width: 768px) and (max-width: 1125px) {
+  .messi h1 {
+    color: rgb(228, 228, 228);
+    font-weight: 500;
+    font-size: 2em;
+    text-align: center;
+    width: 100%;
+    padding-top: 3%;
+    padding-bottom: 30%;
+  }
+}
+@media screen and (min-width: 280px) and (max-width: 768px) {
+  .messi h1 {
+    color: rgb(228, 228, 228);
+    font-weight: 2em;
+    font-size: 0.7em;
+    text-align: center;
+    width: 100%;
+    padding-top: 3%;
+    padding-bottom: 30%;
+  }
+}
+
+main section p {
+  word-spacing: 5px;
+}
+@media screen and (min-width: 768px) and (max-width: 1125px) {
+  main section p {
+    word-spacing: 0px;
+    height: 100%;
+  }
+}
+@media screen and (min-width: 280px) and (max-width: 768px) {
+  main section p {
+    word-spacing: 0px;
+    height: 100%;
+  }
+}
+main section .dts {
+  width: auto;
+  margin: 50px 20px;
+}
+@media screen and (min-width: 768px) and (max-width: 1125px) {
+  main section .dts {
+    height: 20%;
+  }
+}
+@media screen and (min-width: 280px) and (max-width: 768px) {
+  main section .dts {
+    height: 8%;
+  }
+}
+@media screen and (max-width: 768px) {
+  main section .texto {
+    font-size: 0.7em;
+  }
+}
+
 /* segundo main */
 .equipo {
   display: grid;
@@ -262,93 +344,77 @@ header img {
 }
 
 /* end seg main */
-.messi img {
-  width: 100%;
-  height: 100%;
+.vende-c {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  grid-template-areas: "encabezado encabezado" "mapa formulario";
 }
-.messi h1 {
+.vende-c .encabezado {
+  grid-area: encabezado;
   display: flex;
   flex-direction: column;
-  position: absolute;
-  font-size: 3em;
-  text-align: center;
-  color: rgb(228, 228, 228);
+  align-items: center;
+  margin: 40px 20px;
 }
-@media screen and (min-width: 768px) and (max-width: 1125px) {
-  .messi h1 {
-    color: rgb(228, 228, 228);
-    font-weight: 500;
-    font-size: 2em;
-    text-align: center;
-    width: 100%;
-    padding-top: 3%;
-    padding-bottom: 30%;
-  }
+.vende-c .mapa {
+  grid-area: mapa;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px 30px;
 }
-@media screen and (min-width: 280px) and (max-width: 768px) {
-  .messi h1 {
-    color: rgb(228, 228, 228);
-    font-weight: 2em;
-    font-size: 0.7em;
-    text-align: center;
-    width: 100%;
-    padding-top: 3%;
-    padding-bottom: 30%;
-  }
+.vende-c .formulario {
+  grid-area: formulario;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px 30px;
 }
 
-/* estilos de las camisetas */
-.container {
-  position: relative;
-  display: inline-block;
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  padding: 30px;
+  margin-inline-end: 0px;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgb(13, 13, 13);
 }
 
-.imagen {
-  transition: 0.3s;
+form {
+  display: flex;
+  flex-direction: column;
 }
-.imagenhover {
-  transform: scale(1.2);
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  font-weight: 400;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.enviar {
+  background-color: #4CAF50;
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.enviarhover {
+  background-color: #45a049;
   cursor: pointer;
-}
-
-.navbar {
-  padding: 0;
-}
-
-/* end estilos camisetas */
-main section p {
-  word-spacing: 5px;
-}
-@media screen and (min-width: 768px) and (max-width: 1125px) {
-  main section p {
-    word-spacing: 0px;
-    height: 100%;
-  }
-}
-@media screen and (min-width: 280px) and (max-width: 768px) {
-  main section p {
-    word-spacing: 0px;
-    height: 100%;
-  }
-}
-main section .dts {
-  width: auto;
-  margin: 50px 20px;
-}
-@media screen and (min-width: 768px) and (max-width: 1125px) {
-  main section .dts {
-    height: 20%;
-  }
-}
-@media screen and (min-width: 280px) and (max-width: 768px) {
-  main section .dts {
-    height: 8%;
-  }
-}
-@media screen and (max-width: 768px) {
-  main section .texto {
-    font-size: 0.7em;
-  }
 }
 
 /* footer */
@@ -366,7 +432,7 @@ main section .dts {
 footer {
   background-color: rgb(10, 10, 148);
   color: rgb(228, 228, 228);
-  padding: 20px 0;
+  padding: 20px 0px;
 }
 
 .social-links {
@@ -397,13 +463,18 @@ footer {
 
 .logo {
   display: block;
-  margin: 0 auto;
+  margin: 0px auto;
   max-width: 100px;
 }
 @media screen and (max-width: 768px) {
   .logo {
     max-width: 50px;
   }
+}
+
+footer .redes {
+  padding: 10px;
+  margin-left: -30px;
 }
 
 /* end footer */
