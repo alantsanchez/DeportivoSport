@@ -1,20 +1,38 @@
 //vende tu camiseta
 //encabezado
+h2{
+  @media screen and (max-width: 768px){
+    font-size: $textMd;
+  }
+}
+
+section{
+  p{
+    text-align: center;
+    @media screen and (max-width: 768px){
+      font-size: $textSm;
+    }
+  }
+}
 
 //grid
 .vende-c{
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-rows: 50% 50%;
+  grid-template-rows: 25% 25% 25% 25%;
   grid-template-areas:
   "encabezado encabezado"
+  "mapa formulario"
+  "mapa formulario"
   "mapa formulario";
   .encabezado{
     grid-area: encabezado;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    text-align: center;
     align-items: center;
-    margin: 40px 20px;
+    margin: 0px 0px;
+    background-color: $white;
   }
   .mapa{
     grid-area: mapa;
@@ -22,6 +40,11 @@
     flex-direction: column;
     justify-content: center;
     padding: 50px 30px;
+    font-size: $textMd;
+    @media screen and (min-width: 768px) and (max-width: 1125px){
+    }
+    @media screen and (max-width: 768px){
+    }
   }
   .formulario{
     grid-area: formulario;
@@ -29,6 +52,13 @@
     flex-direction: column;
     justify-content: center;  
     padding: 50px 30px;
+    font-size: $textMd;
+    @media screen and (min-width: 768px) and (max-width: 1125px){
+      width: 100%;
+    }
+    @media screen and (max-width: 768px){
+      width: 100%;
+    }
   }
 }
 

@@ -42,13 +42,16 @@ h1 {
   width: 100%;
   background-color: rgb(10, 10, 148);
   font-size: 1.2em;
+  padding-right: 20px;
 }
 .navegacion div ul li a {
   color: rgb(228, 228, 228);
+  padding: 40px;
+  margin-right: 20px;
 }
 
 img {
-  width: 13vh;
+  width: 10vh;
 }
 @media (min-width: 280px) and (max-width: 720px) {
   img {
@@ -224,6 +227,10 @@ header img {
   cursor: pointer;
 }
 
+main section article {
+  padding: 20px;
+}
+
 .messi img {
   width: 100%;
   height: 100%;
@@ -344,18 +351,35 @@ main section .dts {
 }
 
 /* end seg main */
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 1em;
+  }
+}
+
+section p {
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  section p {
+    font-size: 0.7em;
+  }
+}
+
 .vende-c {
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-rows: 50% 50%;
-  grid-template-areas: "encabezado encabezado" "mapa formulario";
+  grid-template-rows: 25% 25% 25% 25%;
+  grid-template-areas: "encabezado encabezado" "mapa formulario" "mapa formulario" "mapa formulario";
 }
 .vende-c .encabezado {
   grid-area: encabezado;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  text-align: center;
   align-items: center;
-  margin: 40px 20px;
+  margin: 0px 0px;
+  background-color: rgb(228, 228, 228);
 }
 .vende-c .mapa {
   grid-area: mapa;
@@ -363,6 +387,7 @@ main section .dts {
   flex-direction: column;
   justify-content: center;
   padding: 50px 30px;
+  font-size: 1em;
 }
 .vende-c .formulario {
   grid-area: formulario;
@@ -370,6 +395,17 @@ main section .dts {
   flex-direction: column;
   justify-content: center;
   padding: 50px 30px;
+  font-size: 1em;
+}
+@media screen and (min-width: 768px) and (max-width: 1125px) {
+  .vende-c .formulario {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .vende-c .formulario {
+    width: 100%;
+  }
 }
 
 .form-container {
