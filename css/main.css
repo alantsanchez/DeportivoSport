@@ -49,6 +49,13 @@ h1 {
   padding: 40px;
   margin-right: 20px;
 }
+@media (min-width: 280px) and (max-width: 991px) {
+  .navegacion div ul li a {
+    margin-right: 0px;
+    padding: 10px;
+    text-align: center;
+  }
+}
 
 img {
   width: 10vh;
@@ -219,16 +226,26 @@ header img {
   display: inline-block;
 }
 
-.imagen {
-  transition: 0.3s;
-}
-.imagenhover {
-  transform: scale(1.2);
-  cursor: pointer;
-}
-
 main section article {
   padding: 20px;
+}
+
+.card {
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  transform-origin: center center;
+}
+
+.imagen {
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+.card:hover .imagen {
+  transform: scale(1.1);
+  cursor: pointer;
 }
 
 .messi img {

@@ -15,8 +15,13 @@
                     color: $white;
                     padding: 40px;
                     margin-right: 20px;
+                    @media (min-width:280px) and (max-width:991px){
+                        margin-right: 0px;
+                        padding: 10px;
+                        text-align: center;
+                    }
                 }
-            }
+             }
         }
     }
 }

@@ -39,14 +39,6 @@
     display: inline-block;
 }
 
-.imagen {
-    transition: 0.3s;
-    &hover{
-        transform: scale(1.2);
-        cursor: pointer;
-    }
-}
-
 main{
     section{
         article{
@@ -54,3 +46,24 @@ main{
         }
     }
 }
+
+//tranciciones
+.card{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform-origin: center center;
+}
+  
+.imagen{
+    transition: transform 0.3s ease;
+}
+  
+.card:hover{
+    transform: scale(1.05);
+    .imagen{
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+}
+
+  
