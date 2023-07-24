@@ -63,6 +63,9 @@ header {
 /* estilos imagenes index */
 .roman {
     display: flex;
+    @media screen and (min-width:280px) and (max-width:768px){
+        display: grid;
+    }
 }
   
 .cristiano {
